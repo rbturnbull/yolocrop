@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "yolocrop"
+version = "0.1.0"
+description = "Use a YOLO model to just predict the bounding box of an object and crop it."
+authors = ["Robert Turnbull <robert.turnbull@unimelb.edu.au>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ultralytics = "^8.2.2"
+appdirs = "^1.4.4"
+typer = "^0.12.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+yolocrop = "yolocrop.main:app"
+
